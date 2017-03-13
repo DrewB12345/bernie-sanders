@@ -86,7 +86,8 @@ h2 {
 }
 
 h3 {
-
+  text-align: center;
+  color: #14145a
 }
 
 h4 {
@@ -102,7 +103,7 @@ h6 {
 }
 
 p {
-
+  line-height: 0px;
 }
 
 blockquote {
@@ -210,8 +211,21 @@ a:active {
   color: #fd9802;
 }
 
+.menu-dismiss {
+  color: #fd9802
+}
+
 .navbar-slideout,
 .navbar-menu {
+  background-color: #14145a;
+}
+
+.navbar-slideout .navbar-menu,
+.navbar-slideout-xs .navbar-menu,
+.navbar-slideout-sm .navbar-menu,
+.navbar-slideout-md .navbar-menu,
+.navbar-slideout-lg .navbar-menu,
+.navbar-slideout-xl .navbar-menu {
   background-color: #14145a;
 }
 
@@ -224,12 +238,16 @@ a:active {
   color: #fd9802;
 }
 
-table.shade-even-rows tbody tr:nth-child(even) {
+table.shade-even-rows tbody tr:nth-child(even),
+table.shade-even-rows tbody tr:nth-child(even) a:visited,
+table.shade-even-rows tbody tr:nth-child(even) a:link {
   background-color: #14145a;
   color: #fd9802;
 }
 
-table.shade-odd-rows tbody tr:nth-child(odd) {
+table.shade-odd-rows tbody tr:nth-child(odd),
+table.shade-odd-rows tbody tr:nth-child(odd) a:visited,
+table.shade-odd-rows tbody tr:nth-child(odd) a:link {
   background-color: #fd9802;
   color: #14145a;
 }
@@ -242,6 +260,37 @@ tbody tr:nth-child(odd) td {
   color: #14145a;
 }
 
-table.table-stack-sm td:before {
-  color: #761414;
+tbody tr:nth-child(even) td {
+  color: #fd9802;
+}
+
+table.table-stack-xs td:before,
+table.table-stack-sm td:before,
+table.table-stack-md td:before,
+table.table-stack td:before {
+  color: #fd9802;
+}
+
+tbody tr:nth-child(odd) td:before {
+  color: #14145a;
+}
+
+table.table-basic caption {
+  color: #14145a;
+}
+
+table.table-basic th {
+  border-bottom: none;
+  border-top: none;
+}
+
+table.table-basic tbody tr {
+  border-bottom: none;
+}
+
+table.table-stack-xs tbody tr,
+table.table-stack-sm tbody tr,
+table.table-stack-md tbody tr,
+table.table-stack tbody tr {
+  border: none;
 }
